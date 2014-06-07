@@ -1,0 +1,22 @@
+{
+  "name": "cocotte-field",
+  "description": "フィールド定義",
+  "homepage": "https://github.com/yukik/cocotte-field",
+  "keywords": ["cocotte", "m2r"],
+  "author": "Yuki Kurata <yuki.kurata@gmail.com>",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yukik/cocotte-field.git"
+  },
+  "main": "lib/field.js",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
