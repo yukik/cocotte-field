@@ -1,1 +1,3 @@
-console.log('作成中');
+
+
+require('./text');
