@@ -10,7 +10,7 @@ cocotte-field
 **(注意)** Fieldクラスは抽象クラスです
 
 
-# 初期化
+# 使用方法
 
 ```
 var config = {
@@ -18,6 +18,8 @@ var config = {
   max: 20
 };
 var textField = new Field.Text(config);
+
+textField.valid('foo');
 ```
 
 # 共通プロパティ
@@ -64,7 +66,7 @@ var textField = new Field.Text(config);
   + 値が指定範囲内かを確認します
   + 戻り値は範囲内の場合はtrue,範囲外の場合はfalse
 
-## valid ({Mixed} value, {Object} skip, {String} prefix)
+## valid ({Mixed} value, {Object} skip)
 
   + 値を検証します
   + 戻り値はありません
@@ -77,13 +79,15 @@ var textField = new Field.Text(config);
           + required 必須
           + type 型
           + validation カスタム検証
-  + prefixには例外発行時のメッセージに接頭語を追加する事ができます
-      + 既定値は空文字です
 
 ## toValue ({Mixed} value)
 
   + クライアントから入力された文字列を、検証できる型に変換します
   + 変換できない場合は、入力値をそのまま返します
+
+## copy ({Mixed} value)
+
+  + 値を複製して返します
 
 # 継承クラス
 
